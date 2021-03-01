@@ -32,6 +32,7 @@ int main() {
           break;
         }
         num = st[st.size() - 2];
+        i++;
       }
       if (now == L'누' || now == L'눈') {
         st.push_back(num);
@@ -47,7 +48,6 @@ int main() {
           break;
         }
         back += st.back();
-        std::wcout << st.back() << L"\n";
         st.pop_back();
         st.push_back(back);
       } else if (now == L'🏩') {
@@ -68,7 +68,7 @@ int main() {
         for (int j = 0; j < st.size(); j++) {
           std::wcout << (wchar_t)st[j];
         }
-        std::wcout << L"\n";
+        fflush(stdout);
       } else if (now == L'흐') {
         if (st.empty()) {
           std::wcout << L"\n스택이 비어있습니다.(" << ind << ")\n";
