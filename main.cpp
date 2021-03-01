@@ -68,7 +68,7 @@ int main() {
         for (int j = 0; j < st.size(); j++) {
           std::wcout << (wchar_t)st[j];
         }
-        fflush(stdout);
+        std::wcout << L"\n";
       } else if (now == L'흐') {
         if (st.empty()) {
           std::wcout << L"\n스택이 비어있습니다.(" << ind << ")\n";
