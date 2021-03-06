@@ -47,9 +47,9 @@ int main() {
           break;
         }
         num = pow(2, num);
-        i++;
       }
       if (now == L'누' || now == L'눈') {
+        if(input[i] == L'으') num = st.back();
         st.push_back(num);
       } else if (now == L'💕') {
         if (st.empty()) {
