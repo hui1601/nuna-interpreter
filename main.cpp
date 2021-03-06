@@ -9,6 +9,7 @@ std::vector<int64_t> st;
 int main() {
   setlocale(LC_ALL, "");
   while (true) {
+    if(feof(stdin)) break;
     size_t i, input_len, num;
     int64_t back;
     std::wstring input;
